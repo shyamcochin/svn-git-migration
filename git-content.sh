@@ -18,7 +18,7 @@ if [ $i -eq 1 ];then
 	#echo "First Revision"
 	mkdir $reponame;cd $reponame
 	echo "Checking out revision" $rev
-	svn co --username="krishnadas" --password="Chayowo@1" --non-interactive $url$reponame/trunk --ignore-externals -r $rev .
+	svn co --username="syam" --password="password" --non-interactive $url$reponame/trunk --ignore-externals -r $rev .
 	echo ".svn" > .gitignore
 	git init
 	git remote add origin $giturl/$reponame.git
